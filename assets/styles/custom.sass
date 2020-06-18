@@ -1,0 +1,96 @@
+@import './_variables.sass'
+
+@font-face
+    font-family: 'Headliner'
+    src: url('../fonts/HeadlinerNo45.ttf')
+
+body
+    header
+        padding: 1.5rem 0
+        background-color: $black
+        position: relative
+        // &::after
+        //         position: absolute
+        //         left: 0
+        //         top: 0
+        //         content: ""
+        //         width: 100%
+        //         height: 100%
+        //         display: block
+        //         background-image: url('../images/header__dots.png')
+        //         background-position: center
+        .container
+            .header
+                &__logo
+                    a
+                        color: $white
+                        // font: Bold 18px/24px Averta Std
+                &__navigation
+                    .navigation__list
+                        .navigation__item
+                            a
+                                //font: Regular 16px/24px Averta Std
+                                text-transform: capitalize
+                                font-size: 1.0625rem
+                                line-height: 0.875rem
+                                text-decoration: none
+                                color: $white
+
+    section.banner
+        img
+            width: 100%
+
+    section.celebrate
+        padding: 8.8125rem 0 6.875rem 0
+        background-image: url('../images/celebrate__background.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        .celebrate__wrapper
+            max-width: 48.0625rem
+            .celebrate
+                &__heading
+                    //font-family: 'Headliner', sans-serif
+                    font-weight: 400
+                    font-size: 3.75rem
+                    letter-spacing: 0.09rem
+                    color: $black__heading
+                    margin-bottom: 2.75rem
+                    span
+                        //font-family: 'Headliner', sans-serif
+                        //font-size: 6rem
+                        font-size: 3.75rem
+                        font-weight: 400
+                        letter-spacing: 0.1425rem
+                        color: $red
+                &__items
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    li.celebrate__item
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 23.25rem
+                        height: 10.625rem
+                        margin-bottom: 1.5625rem
+                        padding: 0 1.5rem
+                        border: 0.1875rem solid $gray
+                        img.item__image
+                            margin-right: 1.1875rem
+                            max-width: 4.375rem
+                            max-height: 4.375rem
+                        h2.item__title
+                            //font: Bold 24px/30px Averta Std
+                            font-weight: 700
+                            font-size: 1.5rem
+                            //word-wrap: break-word
+                            color: $black__heading
+                            display: inline-block
+                        &:nth-of-type(3),
+                        &:nth-of-type(4),
+                            margin-bottom: 0
+                        &:hover
+                            border-color: $black__heading
+                            h2.item__title
+                                color: $red
