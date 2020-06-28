@@ -3,18 +3,22 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='./assets/bootstrap/bootstrap.css')
     link(rel='stylesheet', href='./assets/styles/styles.min.css')
-    script(src='./node_modules/jquery/dist/jquery.min.js', defer)
-    script(src='./node_modules/bootstrap/dist/js/bootstrap.min.js', defer)
+    script(type='text/javascript', src="./assets/scripts/min/scripts-min.js")
     title Spike the ball
-  body
+  body.main
+    //- Contact-fixed
+    .contact
+      a(href='#')
+        p DONATE
+        img(src='./assets/images/contribute__button_icon.svg')
+
     header
         .container.d-flex.align-items-center.justify-content-between
             .header__logo.col
               a(href="#") SpikeTheBall.org
             .header__navigation_wrapper.col-7
-              nav.header__navigation
+              nav.navigation--primary
                 ul.navigation__list.d-flex.align-items-center.justify-content-between
                   li.navigation__item 
                     a(href="#") Articles
@@ -30,90 +34,265 @@ html(lang='en')
                     .underline
                   li.navigation__item
                     a(href="#") About us
+
     section.banner
       img(src="./assets/images/banner.png", alt="banner")
+
     section.celebrate
       .container
         .celebrate__wrapper.ml-auto
-          h1.celebrate__heading.
+          h1.heading.
             REPUBLICANS IT'S TIME #[br] #[span TO CELEBRATE OUR WINS]
-          ul.celebrate__items
-            li.celebrate__item
-              img.item__image(src="./assets/images/celebrate__upload.svg", alt="item image")
-              h2.item__title Upload Your SpikeTheBall videos
-            li.celebrate__item
-              img.item__image(src="./assets/images/celebrate__articles.svg", alt="item image")
-              h2.item__title Articles on Republican Wins
-            li.celebrate__item
-              img.item__image(src="./assets/images/celebrate__send.svg", alt="item image")
-              h2.item__title Send Me SpikeTheBall Footballs
-            li.celebrate__item
-              img.item__image(src="./assets/images/celebrate__videos.svg", alt="item image")
-              h2.item__title SpikeTheBall #[br] Videos
+          .celebrate__items
+            a(href="#").celebrate__item
+                h2.item__title Upload Your SpikeTheBall videos
+            a(href="#").celebrate__item
+                h2.item__title Articles on Republican Wins
+            a(href="#").celebrate__item
+                h2.item__title Send Me SpikeTheBall Footballs
+            a(href="#").celebrate__item
+                h2.item__title SpikeTheBall #[br] Videos
+
     section.articles
       .container
-        h2.articles__heading LATEST ARTICLES
-        .articles__sort
+        h2.heading LATEST ARTICLES
+        .sort
           h3.sort__title Sort by:
-          select.sort__select
-            option Latest Articles
+          .select__wrapper
+            select.sort__select
+              option(value="latest", selected) Latest Articles
         ul.articles__categories
           li.category__title
-            li.category__title
-              a(href="#") Trump
-            li.category__title
-              a(href="#") Senate
-            li.category__title
-              a(href="#") Congress
-            li.category__title
-              a(href="#") Courts
-            li.category__title
-              a(href="#") Elections
-            li.category__title
-              a(href="#") Political Cartoons
-            li.category__title
-              a(href="#") Fake News
-        // SLICKSLIDER
+            a(href="#") Trump
+          li.category__title
+            a(href="#") Senate
+          li.category__title
+            a(href="#") Congress
+          li.category__title
+            a(href="#") Courts
+          li.category__title
+            a(href="#") Elections
+          li.category__title
+            a(href="#") Political Cartoons
+          li.category__title
+            a(href="#") Fake News
+        //- SLICKSLIDER
+        ul.articles__items.row#articles
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-1.png" alt="article preview")
+                legend
+                  h4.article__title Why more Republican women are running for the House than ever before?
+                  h5.article__description Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.vox.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-2.png" alt="article preview")
+                legend
+                  h4.article__title Trump hands Cory Gardner election year wins
+                  h5.article__description The meeting occurred 11 weeks ago, in a bygone time before coronavirus killed 90,000 Americans, before the stock market plummeted, before the layoffs and the isolation and the closures...
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.denverpost.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-3.png" alt="article preview")
+                legend
+                  h4.article__title Trump wins the lockdown wars
+                  h5.article__description President Trump has won the lockdown wars as coronavirus-related restrictions on businesses are eased across the country, so far with few signs of dire health consequences for the population...
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.ignite.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-1.png" alt="article preview")
+                legend
+                  h4.article__title Why more Republican women are running for the House than ever before?
+                  h5.article__description Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.vox.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-2.png" alt="article preview")
+                legend
+                  h4.article__title Trump hands Cory Gardner election year wins
+                  h5.article__description The meeting occurred 11 weeks ago, in a bygone time before coronavirus killed 90,000 Americans, before the stock market plummeted, before the layoffs and the isolation and the closures...
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.denverpost.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/article-3.png" alt="article preview")
+                legend
+                  h4.article__title Trump wins the lockdown wars
+                  h5.article__description President Trump has won the lockdown wars as coronavirus-related restrictions on businesses are eased across the country, so far with few signs of dire health consequences for the population...
+              .article__share
+                img(src="./assets/images/url__icon.png" alt="url image").share__img
+                a(href="#").share__reference www.ignite.com
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+
+  section.videos
+      .container
+        h2.heading LATEST VIDEOS
+        .sort
+          h3.sort__title Sort by:
+          .select__wrapper
+            select.sort__select
+              option(value="latest", selected) Latest Articles
         ul.articles__items
           li.articles__item
-            img.item__image(src="./assets/images/article-1.png" alt="article preview")
-            h4.item__title Why more Republican women are running for the House than ever before?
-            h5.item__description Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.
-            .item__share
-              img(src="./assets/images/url__icon.png" alt="url image").share__img
-              span.share__url www.vox.com
-              ul.share__social
-                li.social__item
-                  img(src="./assets/images/facebook.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/twitter.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/linkedin.svg" alt="social item")
+            article
+              figure
+                img.article__image(src="./assets/images/video-1.png" alt="video preview")
+                legend
+                  h4.article__title Your Guide to Lowering Your Student Loan Payments
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
           li.articles__item
-            img.item__image(src="./assets/images/article-2.png" alt="article preview")
-            h4.item__title
-            h5.item__description
-            .item__share
-              img(src="./assets/images/url__icon.png" alt="url image").share__img
-              span.share__url
-              ul.share__social
-                li.social__item
-                  img(src="./assets/images/facebook.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/twitter.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/linkedin.svg" alt="social item")
+            article
+              figure
+                img.article__image(src="./assets/images/video-2.png" alt="video preview")
+                legend
+                  h4.article__title Trump wins the lockdown wars
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
           li.articles__item
-            img.item__image(src="./assets/images/article-3.png" alt="article preview")
-            h4.item__title
-            h5.item__description
-            .item__share
-              img(src="./assets/images/url__icon.png" alt="url image").share__img
-              span.share__url
-              ul.share__social
-                li.social__item
-                  img(src="./assets/images/facebook.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/twitter.svg" alt="social item")
-                li.social__item
-                  img(src="./assets/images/linkedin.svg" alt="social item")
+            article
+              figure
+                img.article__image(src="./assets/images/video-3.png" alt="video preview")
+                legend
+                  h4.article__title Your Guide to Lowering Your Student Loan Payments
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/video-4.png" alt="video preview")
+                legend
+                  h4.article__title Your Guide to Lowering Your Student Loan Payments
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/video-5.png" alt="video preview")
+                legend
+                  h4.article__title Your Guide to Lowering Your Student Loan Payments
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+          li.articles__item
+            article
+              figure
+                img.article__image(src="./assets/images/video-6.png" alt="video preview")
+                legend
+                  h4.article__title Trump wins the lockdown wars
+              .article__share
+                a(href="#").share__reference Uploaded: August 29th, 2018
+                .share__social
+                  a(href="#").social__item
+                  a(href="#").social__item
+                  a(href="#").social__item
+
+  section.contribute
+    .container
+      .contribute__wrapper
+        h3.contribute__reference Support SpikeTheBall.org
+        h2.contribute__heading HELP WIN KEY ELECTION RACES
+        h4.contribute__description Your contribution will go to Republican candidates in close races both nationally and at the state level
+        button.contribute__button #[span.contribute__button_icon]CONTRIBUTE
+
+  section.send
+    .container
+      .send__wrapper
+        h2.send__heading SEND ME SPIKETHEBALL FOOTBALLS
+        h2.send__description Fill out form and you will receive two SpikeTheBall Footballs
+        button.send__button ORDER
+
+  section.footer
+    .container
+      .footer__navigation.d-flex.align-items-center.justify-content-between
+        .footer__logo.col
+          a(href="#")
+        .footer__navigation_wrapper.col-6
+          nav.navigation--primary
+            ul.navigation__list.d-flex.align-items-center.justify-content-between
+              li.navigation__item 
+                a(href="#") Articles
+                .underline
+              li.navigation__item
+                a(href="#") Videos
+                .underline
+              li.navigation__item
+                a(href="#") Order Footballs
+                .underline
+              li.navigation__item
+                a(href="#") Contribute
+                .underline
+              li.navigation__item
+                a(href="#") About us
+      .footer__contribute
+        .contribute__social
+          h3.social__heading Follow us:
+          ul.social__items
+            li.social__item
+              a(href="#")
+            li.social__item
+              a(href="#")
+            li.social__item
+              a(href="#")
+            li.social__item
+              a(href="#")
+        button.contribute__button #[span.contribute__button_icon]CONTRIBUTE
+      span.footer__copyright Copyright © 2020 SpikeTheBall. All rights reserved.

@@ -1,40 +1,251 @@
 @import './_variables.sass'
 
 @font-face
-    font-family: 'Headliner'
-    src: url('../fonts/HeadlinerNo45.ttf')
+    font-family: 'Averta'
+    src: url('../fonts/averta/averta_regular.otf')
 
-body
+@font-face
+    font-family: 'Averta--bold'
+    src: url('../fonts/averta/averta_bold.otf')
+
+@font-face
+    font-family: 'Averta--semibold'
+    src: url('../fonts/averta/averta_semibold.otf')
+
+@font-face
+    font-family: 'Averta--light'
+    src: url('../fonts/averta/averta_light.otf')
+
+@font-face
+    font-family: 'Headliner'
+    src: url('../fonts/headliner/headliner.ttf')
+
+@font-face
+    font-family: 'BigNoodleTitling'
+    src: url('../fonts/big_noodle_titling/big_noodle_titling.ttf')
+
+%vertical-center
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+nav.navigation--primary
+    .navigation__list
+        .navigation__item
+            a
+                font-size: 1rem
+                letter-spacing: 0.0625rem
+                text-transform: capitalize
+                color: $white
+
+.contact
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 9.125rem
+    width: 2.6875rem
+    background-color: $darkblue
+    z-index: 100
+    position: fixed
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+    cursor: pointer
+    a
+        transform: rotate(-90deg)
+        display: flex
+        flex-direction: row-reverse
+        justify-content: center
+        align-items: center
+        p
+            color: $white
+            font-size: 1.125rem
+            text-transform: uppercase
+        img
+            margin-right: 0.42rem
+
+.heading
+    font-family: 'Headliner', sans-serif
+    font-weight: 400
+    font-size: 3.75rem
+    letter-spacing: 0.09rem
+    color: $black__heading
+    display: inline-block
+
+.sort
+    float: right
+    padding-top: 1.5rem
+    display: flex
+    align-items: center
+    h3.sort__title
+        font-weight: bold
+        font-size: 1rem
+        letter-spacing: 0.005rem
+        position: relative
+        display: inline-block
+        color: $white
+        &::before
+            position: absolute
+            top: 50%
+            left: -1.25rem
+            transform: translateY(-50%)
+            width: 0.9375rem
+            height: 0.9375rem
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            background-image: url('../images/sort__icon.svg')
+            content: ""
+    .select__wrapper
+        float: right
+        position: relative
+        margin-left: 2.1rem
+        padding: 0 1.5625rem
+        select.sort__select
+            background-color: transparent
+            outline: none
+            border: none
+            width: 18.6875rem
+            height: 1.4375rem
+            letter-spacing: 0.0056rem
+            color: $white
+            font-size: 1.125rem
+        &::after
+            position: absolute
+            width: 100%
+            height: 0.0625rem
+            background-color: $white
+            left: 0
+            bottom: -1.0625rem
+            content: ""
+
+.articles__items
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            li.articles__item
+                article
+                    margin: auto
+                    height: 100%
+                    width: 23.25rem
+                    height: 32.5625rem
+                    background-color: $white
+                    position: relative
+                    margin-bottom: 1.6875rem
+                    img.article__image
+                        max-width: 23.25rem
+                        height: auto
+                        margin-bottom: 0.875rem
+                    h4.article__title
+                        font-family: 'Averta--bold', sans-serif
+                        font-size: 1.5rem
+                        font-weight: bold
+                        color: $black__heading
+                        margin-bottom: 1rem
+                    h5.article__description
+                        font-size: 1rem
+                        color: $black__heading
+                    .article__share
+                        position: absolute
+                        left: 50%
+                        bottom: 0
+                        transform: translateX(-50%)
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        border-top: 0.0625rem solid $black__heading
+                        padding:
+                            top: 1.25rem
+                            bottom: 1.25rem
+                        img.share__img
+                            width: 1.25rem
+                            height: 1.25rem
+                            margin-right: 0.4375rem
+                        a.share__reference
+                            font-size: 1.125rem
+                            color: $black__heading
+                        .share__social
+                            float: right
+                            margin-left: auto
+                            display: block
+                            a.social__item
+                                width: 0.875rem
+                                height: 0.875rem
+                                background-position: center
+                                background-repeat: no-repeat
+                                background-size: contain
+                                float: left
+                                margin-right: 1.835rem
+                                position: relative
+                                &::after
+                                    position: absolute
+                                    top: -0.25rem
+                                    right: -0.9175rem
+                                    width: 0.0625rem
+                                    height: calc(100% + 0.5rem)
+                                    content: ""
+                                    background-color: $black
+                                &:first-of-type
+                                    background-image: url('../images/facebook.svg')
+                                &:nth-of-type(2)
+                                    background-image: url('../images/twitter.svg')
+                                &:last-of-type
+                                    background-image: url('../images/linkedin.svg')
+                                    margin-right: 0
+                                    &::after
+                                        content: none
+                                &:hover
+                                    &:first-of-type
+                                        background-image: url('../images/facebook--hover.svg')
+                                    &:nth-of-type(2)
+                                        background-image: url('../images/twitter--hover.svg')
+                                    &:last-of-type
+                                        background-image: url('../images/linkedin--hover.svg')
+                    h4.article__title,
+                    h5.article__description,
+                    .article__share
+                        max-width: 21.375rem
+                        margin:
+                            left: auto
+                            right: auto
+
+button.contribute__button
+    padding: 0.9375rem 9.375rem
+    border: 0.0625rem solid $white
+    outline: none
+    background-color: transparent
+    text-align: center
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 1.125rem
+    color: $white
+    span.contribute__button_icon
+        vertical-align: middle
+        display: inline-block
+        margin-right: 0.5rem
+        width: 1.25rem
+        height: 1.25rem
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        background-image: url('../images/contribute__button_icon.svg')
+
+body.main
+    font-family: 'Averta', sans-serif
     header
         padding: 1.5rem 0
-        background-color: $black
-        position: relative
-        // &::after
-        //         position: absolute
-        //         left: 0
-        //         top: 0
-        //         content: ""
-        //         width: 100%
-        //         height: 100%
-        //         display: block
-        //         background-image: url('../images/header__dots.png')
-        //         background-position: center
+        background-image: url('../images/header__background.png')
+        background-position: center
+        background-size: cover
         .container
-            .header
-                &__logo
-                    a
-                        color: $white
-                        // font: Bold 18px/24px Averta Std
-                &__navigation
-                    .navigation__list
-                        .navigation__item
-                            a
-                                //font: Regular 16px/24px Averta Std
-                                text-transform: capitalize
-                                font-size: 1.0625rem
-                                line-height: 0.875rem
-                                text-decoration: none
-                                color: $white
+            .header__logo
+                a
+                    font-size: 1.125rem
+                    font-weight: 700
+                    letter-spacing: 0.0625rem
+                    text-transform: capitalize
+                    color: $white
 
     section.banner
         img
@@ -48,49 +259,283 @@ body
         background-repeat: no-repeat
         .celebrate__wrapper
             max-width: 48.0625rem
-            .celebrate
-                &__heading
-                    //font-family: 'Headliner', sans-serif
-                    font-weight: 400
-                    font-size: 3.75rem
-                    letter-spacing: 0.09rem
-                    color: $black__heading
+            .heading
+                span
                     margin-bottom: 2.75rem
-                    span
-                        //font-family: 'Headliner', sans-serif
-                        //font-size: 6rem
-                        font-size: 3.75rem
-                        font-weight: 400
-                        letter-spacing: 0.1425rem
-                        color: $red
-                &__items
+                    display: inline-block
+                    font-family: 'Headliner', sans-serif
+                    font-size: 6rem
+                    letter-spacing: 0.1425rem
+                    color: $red
+            .celebrate__items
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                a.celebrate__item
+                    width: 23.25rem
+                    height: 10.625rem
+                    margin-bottom: 1.5625rem
+                    border: 0.1875rem solid $gray
                     display: flex
-                    flex-wrap: wrap
-                    justify-content: space-between
-                    li.celebrate__item
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        width: 23.25rem
-                        height: 10.625rem
-                        margin-bottom: 1.5625rem
-                        padding: 0 1.5rem
-                        border: 0.1875rem solid $gray
-                        img.item__image
-                            margin-right: 1.1875rem
-                            max-width: 4.375rem
-                            max-height: 4.375rem
-                        h2.item__title
-                            //font: Bold 24px/30px Averta Std
-                            font-weight: 700
-                            font-size: 1.5rem
-                            //word-wrap: break-word
-                            color: $black__heading
-                            display: inline-block
-                        &:nth-of-type(3),
-                        &:nth-of-type(4),
-                            margin-bottom: 0
+                    align-items: center
+                    h2.item__title
+                        font-size: 1.5rem
+                        font-weight: 700
+                        color: $black__heading
+                        max-width: 13.9375rem
+                        display: inline-block
+                        margin-left: 7.5rem
+                        position: relative
+                        &::before
+                            position: absolute
+                            left: -1.25rem
+                            top: 50%
+                            transform: translate(-100%, -50%)
+                            content: ""
+                            width: 4.375rem
+                            height: 4.375rem
+                            background-repeat: no-repeat
+                            background-size: contain
+                            background-position: center
+                    &:first-of-type
+                        h2.item__title::before
+                            background-image: url('../images/celebrate__upload.svg')
                         &:hover
-                            border-color: $black__heading
-                            h2.item__title
-                                color: $red
+                            h2.item__title::before
+                                background-image: url('../images/celebrate__upload--hover.svg')
+                    &:nth-of-type(2)
+                        h2.item__title::before
+                            background-image: url('../images/celebrate__articles.svg')
+                        &:hover
+                            h2.item__title::before
+                                background-image: url('../images/celebrate__articles--hover.svg')
+                    &:nth-of-type(3)
+                        h2.item__title::before
+                            background-image: url('../images/celebrate__send.svg')
+                        &:hover
+                            h2.item__title::before
+                                background-image: url('../images/celebrate__send--hover.svg')
+                    &:last-of-type
+                        h2.item__title::before
+                            background-image: url('../images/celebrate__videos.svg')
+                        &:hover
+                            h2.item__title::before
+                                background-image: url('../images/celebrate__videos--hover.svg')
+                    &:nth-of-type(3),
+                    &:nth-of-type(4),
+                        margin-bottom: 0
+                    &:hover
+                        border-color: $black__heading
+                        h2.item__title
+                            color: $red
+
+    section.articles
+        background-image: url('../images/articles__background.png')
+        padding:
+            top: 8.75rem
+            bottom: 7.5rem
+        .heading
+            margin-bottom: 5rem
+            color: $white
+        ul.articles__categories
+            margin-bottom: 3.0625rem
+            padding: 0 0.625rem 0 1.5625rem
+            display: flex
+            justify-content: space-between
+            li.category__title
+                position: relative
+                opacity: 0.75
+                &::after
+                    position: absolute
+                    width: 100%
+                    height: 0.0625rem
+                    background-color: $white
+                    left: 0
+                    bottom: -0.875rem
+                    content: ""
+                a
+                    font-size: 1.5rem
+                    letter-spacing: 0.0075rem
+                    color: $white
+                    text-transform: capitalize
+                &:hover
+                    opacity: 1
+                    a
+                        font-weight: bold
+        ul.articles__items
+            position: relative
+            justify-content: space-between
+            button.slick-prev
+                left: -6.875rem
+                background-image: url('../images/articles__back.svg')
+            button.slick-next
+                right: -6.875rem
+                background-image: url('../images/articles__next.svg')
+            button.slick-arrow
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+                display: block
+                background-color: transparent
+                width: 4.375rem
+                height: 4.375rem
+                font-size: 0
+                outline: none
+                border: none
+            li.articles__item
+                article
+                    margin-bottom: 0
+
+    section.videos
+        background-color: $lightgray
+        padding: 5.3125rem 0 4.6875rem 0
+        h2.heading
+            margin-bottom: 6.25rem
+        .sort
+            h3.sort__title
+                color: $black__heading
+                &::before
+                    background-image: url('../images/sort__icon--black.svg')
+            .select__wrapper
+                select
+                    color: $black__heading
+                &::after
+                    background-color: $black
+        ul.articles__items
+            li.articles__item
+                article
+                    height: 27.1875rem
+                    .article__share
+                        a.share__reference
+                            font-size: 0.875rem
+
+    section.contribute
+        background-image: url('../images/contribute__background.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        padding: 7.4375rem 0 3.5rem 0
+        height: 31.125rem
+        .contribute__wrapper
+            max-width: 41.875rem
+            margin-left: auto
+            .contribute
+                &__reference
+                    font-family: 'Averta--semibold', sans-serif
+                    font-size: 1.875rem
+                    color: $white
+                &__heading
+                    font-family: 'BigNoodleTitling', sans-serif
+                    font-size: 4.9375rem
+                    color: $limegreen
+                    text-transform: uppercase
+                &__description
+                    font-family: 'Averta--semibold', sans-serif
+                    font-size: 1.5rem
+                    color: $lightblue
+                    opacity: 0.9
+            button.contribute__button
+                    margin: 3.5rem 0
+
+    section.send
+        padding: 6rem 0 4.375rem 0
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        background-image: url('../images/send__background.png')
+        .send__wrapper
+            max-width: 24.1875rem
+            margin-left: 7.1875rem
+            .send
+                &__heading
+                    text-transform: uppercase
+                    font-family: 'Headliner', sans-serif
+                    font-size: 3.9375rem
+                    color: $black__heading
+                    display: inline-block
+                    margin-bottom: 0.5rem
+                &__description
+                    font-size: 0.875rem
+                    color: $gray
+                    letter-spacing: 0
+                    display: inline-block
+                    margin-bottom: 2rem
+            button.send__button
+                padding: 0.875rem 6.0625rem
+                border: 0.0625rem solid $black
+                outline: none
+                background-color: transparent
+                text-align: center
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 1.125rem
+                color: $black__heading
+
+    section.footer
+        padding: 4.625rem 0 0.9375rem 0
+        background-image: url('../images/footer__background.png')
+        background-position: center
+        background-size: cover
+        .footer
+            &__navigation
+                padding-bottom: 1.65rem
+                margin-bottom: 6.65rem
+                border-bottom: 0.0625rem solid $white
+                .footer__logo
+                    a
+                        display: block
+                        width: 8.4375rem
+                        height: 4.375rem
+                        background-position: center
+                        background-size: contain
+                        background-repeat: no-repeat
+                        background-image: url('../images/footer__logo.png')
+            &__contribute
+                margin-bottom: 4.875rem
+                .contribute__social
+                    display: inline-block
+                    h3.social__heading
+                        font-size: 1rem
+                        letter-spacing: 0
+                        color: $white
+                        display: inline-block
+                        margin-bottom: 0.875rem
+                    ul.social__items
+                        li.social__item
+                            float: left
+                            margin-right: 1.625rem
+                            a
+                                display: block
+                                width: 2.4rem
+                                height: 2.4rem
+                                background-position: center
+                                background-size: contain
+                                background-repeat: no-repeat
+                            &:first-of-type
+                                background-image: url('../images/footer__facebook.svg')
+                            &:nth-of-type(2)
+                                background-image: url('../images/footer__instagram.svg')
+                            &:nth-of-type(3)
+                                background-image: url('../images/footer__twitter.svg')
+                            &:last-of-type
+                                background-image: url('../images/footer__youtube.svg')
+                        &:last-of-type
+                            margin-right: 0
+                button.contribute__button
+                    float: right
+                    border: none
+                    background-color: $red
+                    color: $white
+                    padding: 
+                        left: 2.8125rem
+                        right: 2.8125rem
+            &__copyright
+                display: block
+                width: 100%
+                text-align: center
+                font-family: 'Averta--light', sans-serif
+                font-size: 0.875rem
+                color: $white

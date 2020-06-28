@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/styles.min.css">
-    <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="./assets/scripts/min/scripts-min.js"></script>
     <title>Spike the ball</title>
   </head>
-  <body>
+  <body class="main">
+    <div class="contact"><a href="#">
+        <p>DONATE</p><img src="./assets/images/contribute__button_icon.svg"></a></div>
     <header>
       <div class="container d-flex align-items-center justify-content-between">
         <div class="header__logo col"><a href="#">SpikeTheBall.org</a></div>
         <div class="header__navigation_wrapper col-7">
-          <nav class="header__navigation">
+          <nav class="navigation--primary">
             <ul class="navigation__list d-flex align-items-center justify-content-between">
               <li class="navigation__item"> <a href="#">Articles</a>
                 <div class="underline"></div>
@@ -38,81 +38,260 @@
     <section class="celebrate">
       <div class="container">
         <div class="celebrate__wrapper ml-auto">
-          <h1 class="celebrate__heading">REPUBLICANS IT'S TIME <br> <span>TO CELEBRATE OUR WINS</span></h1>
-          <ul class="celebrate__items">
-            <li class="celebrate__item"><img class="item__image" src="./assets/images/celebrate__upload.svg" alt="item image">
-              <h2 class="item__title">Upload Your SpikeTheBall videos</h2>
-            </li>
-            <li class="celebrate__item"><img class="item__image" src="./assets/images/celebrate__articles.svg" alt="item image">
-              <h2 class="item__title">Articles on Republican Wins</h2>
-            </li>
-            <li class="celebrate__item"><img class="item__image" src="./assets/images/celebrate__send.svg" alt="item image">
-              <h2 class="item__title">Send Me SpikeTheBall Footballs</h2>
-            </li>
-            <li class="celebrate__item"><img class="item__image" src="./assets/images/celebrate__videos.svg" alt="item image">
-              <h2 class="item__title">SpikeTheBall <br> Videos</h2>
-            </li>
-          </ul>
+          <h1 class="heading">REPUBLICANS IT'S TIME <br> <span>TO CELEBRATE OUR WINS</span></h1>
+          <div class="celebrate__items"><a class="celebrate__item" href="#">
+              <h2 class="item__title">Upload Your SpikeTheBall videos</h2></a><a class="celebrate__item" href="#">
+              <h2 class="item__title">Articles on Republican Wins</h2></a><a class="celebrate__item" href="#">
+              <h2 class="item__title">Send Me SpikeTheBall Footballs</h2></a><a class="celebrate__item" href="#">
+              <h2 class="item__title">SpikeTheBall <br> Videos</h2></a></div>
         </div>
       </div>
     </section>
     <section class="articles">
       <div class="container">
-        <h2 class="articles__heading">LATEST ARTICLES</h2>
-        <div class="articles__sort">
+        <h2 class="heading">LATEST ARTICLES</h2>
+        <div class="sort">
           <h3 class="sort__title">Sort by:</h3>
-          <select class="sort__select">
-            <option>Latest Articles</option>
-          </select>
+          <div class="select__wrapper">
+            <select class="sort__select">
+              <option value="latest" selected>Latest Articles</option>
+            </select>
+          </div>
         </div>
         <ul class="articles__categories">
-          <li class="category__title">
-            <li class="category__title"><a href="#">Trump</a></li>
-            <li class="category__title"><a href="#">Senate</a></li>
-            <li class="category__title"><a href="#">Congress</a></li>
-            <li class="category__title"><a href="#">Courts</a></li>
-            <li class="category__title"><a href="#">Elections</a></li>
-            <li class="category__title"><a href="#">Political Cartoons</a></li>
-            <li class="category__title"><a href="#">Fake News</a></li>
-          </li>
+          <li class="category__title"><a href="#">Trump</a></li>
+          <li class="category__title"><a href="#">Senate</a></li>
+          <li class="category__title"><a href="#">Congress</a></li>
+          <li class="category__title"><a href="#">Courts</a></li>
+          <li class="category__title"><a href="#">Elections</a></li>
+          <li class="category__title"><a href="#">Political Cartoons</a></li>
+          <li class="category__title"><a href="#">Fake News</a></li>
         </ul>
-        <!-- SLICKSLIDER-->
-        <ul class="articles__items">
-          <li class="articles__item"><img class="item__image" src="./assets/images/article-1.png" alt="article preview">
-            <h4 class="item__title">Why more Republican women are running for the House than ever before?</h4>
-            <h5 class="item__description">Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.</h5>
-            <div class="item__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><span class="share__url">www.vox.com</span>
-              <ul class="share__social">
-                <li class="social__item"><img src="./assets/images/facebook.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/twitter.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/linkedin.svg" alt="social item"></li>
-              </ul>
-            </div>
+        <ul class="articles__items row" id="articles">
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-1.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Why more Republican women are running for the House than ever before?</h4>
+                  <h5 class="article__description">Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.vox.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
           </li>
-          <li class="articles__item"><img class="item__image" src="./assets/images/article-2.png" alt="article preview">
-            <h4 class="item__title"></h4>
-            <h5 class="item__description"></h5>
-            <div class="item__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><span class="share__url"></span>
-              <ul class="share__social">
-                <li class="social__item"><img src="./assets/images/facebook.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/twitter.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/linkedin.svg" alt="social item"></li>
-              </ul>
-            </div>
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-2.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Trump hands Cory Gardner election year wins</h4>
+                  <h5 class="article__description">The meeting occurred 11 weeks ago, in a bygone time before coronavirus killed 90,000 Americans, before the stock market plummeted, before the layoffs and the isolation and the closures...</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.denverpost.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
           </li>
-          <li class="articles__item"><img class="item__image" src="./assets/images/article-3.png" alt="article preview">
-            <h4 class="item__title"></h4>
-            <h5 class="item__description"></h5>
-            <div class="item__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><span class="share__url"></span>
-              <ul class="share__social">
-                <li class="social__item"><img src="./assets/images/facebook.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/twitter.svg" alt="social item"></li>
-                <li class="social__item"><img src="./assets/images/linkedin.svg" alt="social item"></li>
-              </ul>
-            </div>
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-3.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Trump wins the lockdown wars</h4>
+                  <h5 class="article__description">President Trump has won the lockdown wars as coronavirus-related restrictions on businesses are eased across the country, so far with few signs of dire health consequences for the population...</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.ignite.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-1.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Why more Republican women are running for the House than ever before?</h4>
+                  <h5 class="article__description">Many are looking to add new voices to the party — and were inspired by the wave of Democratic wins in 2018.</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.vox.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-2.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Trump hands Cory Gardner election year wins</h4>
+                  <h5 class="article__description">The meeting occurred 11 weeks ago, in a bygone time before coronavirus killed 90,000 Americans, before the stock market plummeted, before the layoffs and the isolation and the closures...</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.denverpost.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article>
+              <figure><img class="article__image" src="./assets/images/article-3.png" alt="article preview">
+                <legend>
+                  <h4 class="article__title">Trump wins the lockdown wars</h4>
+                  <h5 class="article__description">President Trump has won the lockdown wars as coronavirus-related restrictions on businesses are eased across the country, so far with few signs of dire health consequences for the population...</h5>
+                </legend>
+              </figure>
+              <div class="article__share"><img class="share__img" src="./assets/images/url__icon.png" alt="url image"><a class="share__reference" href="#">www.ignite.com</a>
+                <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+              </div>
+            </article>
           </li>
         </ul>
       </div>
     </section>
   </body>
+  <section class="videos">
+    <div class="container">
+      <h2 class="heading">LATEST VIDEOS</h2>
+      <div class="sort">
+        <h3 class="sort__title">Sort by:</h3>
+        <div class="select__wrapper">
+          <select class="sort__select">
+            <option value="latest" selected>Latest Articles</option>
+          </select>
+        </div>
+      </div>
+      <ul class="articles__items">
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-1.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Your Guide to Lowering Your Student Loan Payments</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-2.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Trump wins the lockdown wars</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-3.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Your Guide to Lowering Your Student Loan Payments</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-4.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Your Guide to Lowering Your Student Loan Payments</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-5.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Your Guide to Lowering Your Student Loan Payments</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+        <li class="articles__item">
+          <article>
+            <figure><img class="article__image" src="./assets/images/video-6.png" alt="video preview">
+              <legend>
+                <h4 class="article__title">Trump wins the lockdown wars</h4>
+              </legend>
+            </figure>
+            <div class="article__share"><a class="share__reference" href="#">Uploaded: August 29th, 2018</a>
+              <div class="share__social"><a class="social__item" href="#"></a><a class="social__item" href="#"></a><a class="social__item" href="#"></a></div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="contribute">
+    <div class="container">
+      <div class="contribute__wrapper">
+        <h3 class="contribute__reference">Support SpikeTheBall.org</h3>
+        <h2 class="contribute__heading">HELP WIN KEY ELECTION RACES</h2>
+        <h4 class="contribute__description">Your contribution will go to Republican candidates in close races both nationally and at the state level</h4>
+        <button class="contribute__button"><span class="contribute__button_icon"></span>CONTRIBUTE</button>
+      </div>
+    </div>
+  </section>
+  <section class="send">
+    <div class="container">
+      <div class="send__wrapper">
+        <h2 class="send__heading">SEND ME SPIKETHEBALL FOOTBALLS</h2>
+        <h2 class="send__description">Fill out form and you will receive two SpikeTheBall Footballs</h2>
+        <button class="send__button">ORDER</button>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="footer__navigation d-flex align-items-center justify-content-between">
+        <div class="footer__logo col"><a href="#"></a></div>
+        <div class="footer__navigation_wrapper col-6">
+          <nav class="navigation--primary">
+            <ul class="navigation__list d-flex align-items-center justify-content-between">
+              <li class="navigation__item"> <a href="#">Articles</a>
+                <div class="underline"></div>
+              </li>
+              <li class="navigation__item"><a href="#">Videos</a>
+                <div class="underline"></div>
+              </li>
+              <li class="navigation__item"><a href="#">Order Footballs</a>
+                <div class="underline"></div>
+              </li>
+              <li class="navigation__item"><a href="#">Contribute</a>
+                <div class="underline"></div>
+              </li>
+              <li class="navigation__item"><a href="#">About us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__contribute">
+        <div class="contribute__social">
+          <h3 class="social__heading">Follow us:</h3>
+          <ul class="social__items">
+            <li class="social__item"><a href="#"></a></li>
+            <li class="social__item"><a href="#"></a></li>
+            <li class="social__item"><a href="#"></a></li>
+            <li class="social__item"><a href="#"></a></li>
+          </ul>
+        </div>
+        <button class="contribute__button"><span class="contribute__button_icon"></span>CONTRIBUTE</button>
+      </div><span class="footer__copyright">Copyright © 2020 SpikeTheBall. All rights reserved.</span>
+    </div>
+  </section>
 </html>

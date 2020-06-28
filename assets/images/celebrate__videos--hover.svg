@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65.676" height="47.738" viewBox="0 0 65.676 47.738">
+  <g id="Videos_Hover" data-name="Videos Hover" transform="translate(-1660 -1330)">
+    <path id="Rectangle_36" data-name="Rectangle 36" d="M4,0H60a4,4,0,0,1,4,4V36a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" transform="translate(1661 1331)" fill="#d53337"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" width="6" height="10" transform="translate(1675 1361)" fill="#fff"/>
+    <path id="Rectangle_44" data-name="Rectangle 44" d="M0,0H64a0,0,0,0,1,0,0V5a5,5,0,0,1-5,5H5A5,5,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1661 1367)" fill="#fff"/>
+    <path id="Path_216" data-name="Path 216" d="M1687.772,1341.026l13.905,8.136-13.905,8.087Z" fill="#fff"/>
+    <g id="Videos" transform="translate(1660 1330)">
+      <g id="Capa_1" data-name="Capa 1">
+        <path id="Path_211" data-name="Path 211" d="M5.691,47.738A5.7,5.7,0,0,1,0,42.049V5.691A5.7,5.7,0,0,1,5.691,0H59.985a5.7,5.7,0,0,1,5.691,5.691V42.049a5.7,5.7,0,0,1-5.691,5.689Zm0-46.053A4.01,4.01,0,0,0,1.686,5.691V42.049a4.01,4.01,0,0,0,4.005,4.005H59.985a4.01,4.01,0,0,0,4.005-4.005V5.691a4.01,4.01,0,0,0-4.005-4.005Z" fill="#333"/>
+        <path id="Path_212" data-name="Path 212" d="M175.312,83.819a.594.594,0,0,1-.34-.105l-.017-.012-.017-.011a.919.919,0,0,1-.439-.733v-16.3a.762.762,0,0,1,.4-.693l.032-.017.031-.022a.682.682,0,0,1,.756,0l.02.012,13.938,8.186.023.012a.762.762,0,0,1,.342,1.022.773.773,0,0,1-.342.34l-.023.012L175.745,83.69h-.012a.761.761,0,0,1-.4.121Zm.872-2.32,11.345-6.69L176.184,68.13Z" transform="translate(-147.512 -55.633)" fill="#333"/>
+        <path id="Path_213" data-name="Path 213" d="M21.295,207.3v-4.039H8.36v-1.686H21.295V195.92h7.341v5.655H71.458v1.686H28.628V207.3Zm1.686-1.686h3.97v-8.009H22.973Z" transform="translate(-7.067 -165.621)" fill="#333"/>
+      </g>
+    </g>
+  </g>
+</svg>

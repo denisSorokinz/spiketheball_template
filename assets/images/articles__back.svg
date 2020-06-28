@@ -1,0 +1,9 @@
+<svg id="Back" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Rectangle_36" data-name="Rectangle 36" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="44" height="44" stroke="none"/>
+    <rect x="0.5" y="0.5" width="43" height="43" fill="none"/>
+  </g>
+  <g id="down-arrow" transform="translate(17.684 28.596) rotate(-90)" fill="#fff">
+    <path id="Path_10" data-name="Path 10" d="M12.943,6.86a.462.462,0,0,1-.653,0L6.545,1.1.789,6.86a.462.462,0,0,1-.653-.653L6.207.135A.451.451,0,0,1,6.533,0,.47.47,0,0,1,6.86.135l6.072,6.071A.453.453,0,0,1,12.943,6.86Z" transform="translate(0)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

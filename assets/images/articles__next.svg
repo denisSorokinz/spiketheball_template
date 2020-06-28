@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Next" transform="translate(0.197 -0.132)">
+    <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(-0.197 0.132)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="44" height="44" stroke="none"/>
+      <rect x="0.5" y="0.5" width="43" height="43" fill="none"/>
+    </g>
+    <g id="down-arrow" transform="translate(19.124 28.728) rotate(-90)">
+      <path id="Path_10" data-name="Path 10" d="M12.943.135a.462.462,0,0,0-.653,0L6.545,5.891.789.135A.462.462,0,0,0,.135.789L6.207,6.86A.451.451,0,0,0,6.533,7,.47.47,0,0,0,6.86,6.86L12.932.789A.453.453,0,0,0,12.943.135Z" transform="translate(0)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

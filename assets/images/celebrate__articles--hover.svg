@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.639" height="70.883" viewBox="0 0 52.639 70.883">
+  <g id="Articles_Hover" data-name="Articles Hover" transform="translate(-1373 -864)">
+    <rect id="Rectangle_43" data-name="Rectangle 43" width="51" height="65" transform="translate(1374 869)" fill="#d53337"/>
+    <rect id="Rectangle_42" data-name="Rectangle 42" width="15" height="7" transform="translate(1392 865)" fill="#fff"/>
+    <rect id="Rectangle_41" data-name="Rectangle 41" width="33" height="30" transform="translate(1383 879)" fill="#fff"/>
+    <g id="Enroll" transform="translate(1373 864)">
+      <g id="Capa_1" data-name="Capa 1">
+        <path id="Path_131" data-name="Path 131" d="M45.38,18.548a.845.845,0,0,0-.3-.642,1.106,1.106,0,0,0-.73-.266H11.938a1.106,1.106,0,0,0-.73.266.845.845,0,0,0-.3.642V48.727a.97.97,0,0,0,1.028.9H44.353a.97.97,0,0,0,1.028-.9Zm-32.406.9h30.52V47.827H12.975Z" transform="translate(-1.904 -3.079)" fill="#333"/>
+        <path id="Path_132" data-name="Path 132" d="M44.338,73.49h-32.1a.908.908,0,1,0,0,1.8h32.1a.908.908,0,1,0,0-1.8Z" transform="translate(-1.957 -12.827)" fill="#333"/>
+        <path id="Path_133" data-name="Path 133" d="M12.119,67.468H29.387a.9.9,0,1,0,0-1.808H12.119a.9.9,0,0,0,0,1.808Z" transform="translate(-0.6 -11.461)" fill="#333"/>
+        <path id="Path_134" data-name="Path 134" d="M33.891,0H18.748a.864.864,0,0,0-.9.825V3.88H1.043A1.028,1.028,0,0,0,0,4.845V70.056a.965.965,0,0,0,1.043.825H51.6a.965.965,0,0,0,1.043-.825V4.845A1.031,1.031,0,0,0,51.6,3.9H34.817V.825a.864.864,0,0,0-.9-.825ZM19.772,1.8H32.858V7.355H19.772ZM50.68,5.7V69.066H1.959V5.7H17.822V8.321a.864.864,0,0,0,.9.825H33.891a.864.864,0,0,0,.9-.825V5.7Z" fill="#333"/>
+      </g>
+    </g>
+  </g>
+</svg>

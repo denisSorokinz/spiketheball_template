@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.455" height="71.4" viewBox="0 0 62.455 71.4">
+  <g id="Upload_Hover" data-name="Upload Hover" transform="translate(-1265.75 -863.74)">
+    <path id="Path_221" data-name="Path 221" d="M844,1179.75,813.75,1197v34.75l30.25,17.5,30-17.5V1197Z" transform="translate(453 -315)" fill="#d53337"/>
+    <path id="Path_222" data-name="Path 222" d="M843.875,1197.75l-11.5,13.25h6.75v12.75H849V1211h7Z" transform="translate(453 -315)" fill="#fff"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(1266 864.01)">
+      <g id="Capa_1" data-name="Capa 1" transform="translate(0 -0.01)">
+        <path id="Path_207" data-name="Path 207" d="M30.978,70.88a.73.73,0,0,1-.359-.1L.362,53.423A.72.72,0,0,1,0,52.8V18.074a.72.72,0,0,1,.362-.625L30.619.087a.72.72,0,0,1,.72,0L61.6,17.449a.72.72,0,0,1,.359.625V52.8a.72.72,0,0,1-.362.625L31.336,70.785a.73.73,0,0,1-.359.1ZM1.441,18.492V52.38L30.978,69.33,60.514,52.38V18.492L30.978,1.542Z" transform="translate(0 0.01)" fill="#333" stroke="#333" stroke-width="0.5"/>
+        <path id="Path_208" data-name="Path 208" d="M136.155,153.379a.72.72,0,0,1-.72-.72V140.892h-5.941a.72.72,0,0,1-.543-1.193l11.7-13.447a.72.72,0,0,1,1.086,0l11.7,13.447a.72.72,0,0,1-.545,1.193h-5.939v11.767a.72.72,0,0,1-.72.72Zm-5.079-13.928h5.079a.72.72,0,0,1,.72.72v11.767h8.645V140.171a.72.72,0,0,1,.72-.72h5.079L141.2,127.822Z" transform="translate(-110.22 -107.848)" fill="#333" stroke="#333" stroke-width="0.5"/>
+        <path id="Path_209" data-name="Path 209" d="M175.72,357.441a.72.72,0,1,1,0-1.441h10.086a.72.72,0,1,1,0,1.441Z" transform="translate(-149.786 -304.705)" fill="#333" stroke="#333" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
